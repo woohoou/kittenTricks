@@ -31,7 +31,7 @@
     "assetBundlePatterns": [
       "src/assets/images/*",
       "src/assets/fonts",
-      "src/layouts/**/assets/*"
+      "src/kittenTricks/layouts/**/assets/*"
     ],
     "androidStatusBar": {
       "barStyle": "dark-content",

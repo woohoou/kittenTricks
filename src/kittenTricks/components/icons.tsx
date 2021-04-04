@@ -30,24 +30,12 @@ export const CloseIcon = (style: ImageStyle): IconElement => (
   <Icon {...style} name="close" />
 );
 
-export const FolderIcon = (style: ImageStyle): IconElement => (
-  <Icon {...style} name="folder-outline" />
-);
-
-export const GiftIcon = (style: ImageStyle): IconElement => (
-  <Icon {...style} name="gift-outline" />
-);
-
 export const GithubIcon = (style: ImageStyle): IconElement => (
   <Icon {...style} name="github" />
 );
 
 export const GridIcon = (style: ImageStyle): IconElement => (
   <Icon {...style} name="grid-outline" />
-);
-
-export const HomeIcon = (style: ImageStyle): IconElement => (
-  <Icon {...style} name="home-outline" />
 );
 
 export const LayoutIcon = (style: ImageStyle): IconElement => (
@@ -64,10 +52,6 @@ export const MenuIcon = (style: ImageStyle): IconElement => (
 
 export const MoreVerticalIcon = (style: ImageStyle): IconElement => (
   <Icon {...style} name="more-vertical" />
-);
-
-export const PinIcon = (style: ImageStyle): IconElement => (
-  <Icon {...style} name="pin-outline" />
 );
 
 export const SearchIcon = (style: ImageStyle): IconElement => (
