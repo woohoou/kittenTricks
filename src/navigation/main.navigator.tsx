@@ -43,4 +43,4 @@ export const MainNavigator = (): React.ReactElement => (
   </Drawer.Navigator>
 );
 
-LogBox.ignoreLogs(['Accessing the state']);
+LogBox.ignoreLogs(["Accessing the 'state'"]); // eslint-disable-line

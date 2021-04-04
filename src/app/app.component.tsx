@@ -11,6 +11,7 @@ import { SplashImage } from '../components/splash-image.component';
 import { AppNavigator } from '../navigation/app.navigator';
 import { AppStorage } from '../services/app-storage.service';
 import { Mapping, Theme, Theming } from '../services/theme.service';
+import { LogBox } from 'react-native';
 
 const loadingTasks: Task[] = [
   () =>
@@ -59,3 +60,5 @@ export default (): React.ReactElement => (
     {props => <App {...props} />}
   </AppLoading>
 );
+
+LogBox.ignoreLogs(['Remote debugger']);
