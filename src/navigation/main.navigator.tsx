@@ -1,13 +1,10 @@
-import React from "react";
-import { LogBox } from "react-native";
-import {
-  BottomTabNavigationOptions,
-  createBottomTabNavigator,
-} from "@react-navigation/bottom-tabs";
-import { createDrawerNavigator } from "@react-navigation/drawer";
-import { MainBottomNavigation } from "../scenes/main/main-bottom-navigation.component";
-import { MainDrawer } from "../scenes/main/main-drawer.component";
-import { HomeNavigator } from "./home.navigator";
+import React from 'react';
+import { LogBox } from 'react-native';
+import { BottomTabNavigationOptions, createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import { createDrawerNavigator } from '@react-navigation/drawer';
+import { MainBottomNavigation } from '../scenes/main/main-bottom-navigation.component';
+import { MainDrawer } from '../scenes/main/main-drawer.component';
+import { HomeNavigator } from './home.navigator';
 
 const BottomTab = createBottomTabNavigator();
 const Drawer = createDrawerNavigator();
@@ -17,7 +14,7 @@ const Drawer = createDrawerNavigator();
  * open Components tab as default.
  */
 
-const ROOT_ROUTES: string[] = ["Home", "Patients", "Branches", "Benefits"];
+const ROOT_ROUTES: string[] = ['Home', 'Patients', 'Branches', 'Benefits'];
 
 const TabBarVisibilityOptions = ({ route }): BottomTabNavigationOptions => {
   const isNestedRoute: boolean = route.state?.index > 0;
@@ -29,8 +26,8 @@ const TabBarVisibilityOptions = ({ route }): BottomTabNavigationOptions => {
 const MainTabsNavigator = (): React.ReactElement => (
   <BottomTab.Navigator
     screenOptions={TabBarVisibilityOptions}
-    initialRouteName={"Home"}
-    tabBar={(props) => <MainBottomNavigation {...props} />}
+    initialRouteName={'Home'}
+    tabBar={props => <MainBottomNavigation {...props} />}
   >
     <BottomTab.Screen name="Home" component={HomeNavigator} />
     <BottomTab.Screen name="Patients" component={HomeNavigator} />
@@ -40,10 +37,10 @@ const MainTabsNavigator = (): React.ReactElement => (
 );
 
 export const MainNavigator = (): React.ReactElement => (
-  <Drawer.Navigator drawerContent={(props) => <MainDrawer {...props} />}>
+  <Drawer.Navigator drawerContent={props => <MainDrawer {...props} />}>
     <Drawer.Screen name="Home" component={MainTabsNavigator} />
     <Drawer.Screen name="Libraries" component={HomeNavigator} />
   </Drawer.Navigator>
 );
 
-LogBox.ignoreLogs(["Accessing the 'state'"]);
+LogBox.ignoreLogs(['Accessing the state']);

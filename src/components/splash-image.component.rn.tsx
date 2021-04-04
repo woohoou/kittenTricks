@@ -6,7 +6,6 @@ export interface LoadingAnimationProps extends ImageProps {
 }
 
 export const SplashImage = (props: LoadingAnimationProps): React.ReactElement | undefined => {
-
   if (!props.loading) {
     NativeModules.SplashScreen.close({
       animationType: 2,

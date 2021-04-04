@@ -2,7 +2,6 @@ import { Platform } from 'react-native';
 import Constants from 'expo-constants';
 
 export class AppInfoService {
-
   static getVersion = (): string => {
     return Constants.manifest.version;
   };

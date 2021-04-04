@@ -47,7 +47,6 @@ export const LoadAssetsTask = (assets: number[]): Promise<TaskResult> => {
  * @property {(result: any) => React.ReactElement} children - Should return Application component
  */
 export const AppLoading = (props: ApplicationLoaderProps): React.ReactElement => {
-
   const [loading, setLoading] = React.useState<boolean>(true);
   const loadingResult = props.initialConfig || {};
 

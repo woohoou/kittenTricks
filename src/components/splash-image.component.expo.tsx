@@ -8,7 +8,6 @@ export interface LoadingAnimationProps extends ImageProps {
 const animationValue: Animated.Value = new Animated.Value(0);
 
 export const SplashImage = (props: LoadingAnimationProps): React.ReactElement | undefined => {
-
   const [animationCompleted, setAnimationCompleted] = React.useState<boolean>(false);
 
   React.useEffect((): void => {
@@ -44,10 +43,7 @@ export const SplashImage = (props: LoadingAnimationProps): React.ReactElement | 
 
   const renderAnimatedComponent = (): React.ReactElement => (
     <Animated.View style={[StyleSheet.absoluteFill, styles.container, { opacity }]}>
-      <Animated.Image
-        {...props}
-        style={[StyleSheet.absoluteFill, styles.image, props.style, { transform }]}
-      />
+      <Animated.Image {...props} style={[StyleSheet.absoluteFill, styles.image, props.style, { transform }]} />
     </Animated.View>
   );
 
@@ -66,4 +62,3 @@ const styles = StyleSheet.create({
     resizeMode: 'contain',
   },
 });
-

@@ -1,6 +1,6 @@
-import React from "react";
-import { DefaultTheme, NavigationContainer } from "@react-navigation/native";
-import { MainNavigator } from "./main.navigator";
+import React from 'react';
+import { DefaultTheme, NavigationContainer } from '@react-navigation/native';
+import { MainNavigator } from './main.navigator';
 
 /*
  * Navigation theming: https://reactnavigation.org/docs/en/next/themes.html
@@ -10,7 +10,7 @@ const navigatorTheme = {
   colors: {
     ...DefaultTheme.colors,
     // prevent layout blinking when performing navigation
-    background: "transparent",
+    background: 'transparent',
   },
 };
 

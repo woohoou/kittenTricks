@@ -23,6 +23,7 @@ module.exports = {
     sourceType: 'module',
   },
   plugins: ['@typescript-eslint'],
+  ignorePatterns: ['src/kittenTricks'],
   rules: {
     '@typescript-eslint/consistent-type-definitions': 'error',
     '@typescript-eslint/dot-notation': 'error',

@@ -5,7 +5,6 @@ const MAPPING_KEY: string = 'mapping';
 const THEME_KEY: string = 'theme';
 
 export class AppStorage {
-
   static getMapping = (fallback?: Mapping): Promise<Mapping> => {
     return AsyncStorage.getItem(MAPPING_KEY).then((mapping: Mapping) => {
       return mapping || fallback;
